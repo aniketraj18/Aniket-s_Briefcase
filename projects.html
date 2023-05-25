@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #dadae5;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  background: rgb(199, 164, 232);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(199, 164, 232);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>My Projects</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Student Amenity Center</h2>
+      <h5>Tech Stack: HTML, CSS, Javascript ,MySQL, PHP</h5>
+      <img src="p1.png" style="height:350px;width:100%;">Image</img>
+      <p>Description:</p>
+      <p>This project is to be used by students of the University to buy/sell commodities for their use.Admin can also add amenities that are officially sold by the University and place them on sale
+        Allows peer - to -peer matchmaking of students willing to sell their items and students willing to buy those.</p>
+    </div>
+    <div class="card">
+      <h2>Text-Analyser app</h2>
+      <h5>Tech Stack:HTML, CSS, Javascript, ReactJs.</h5>
+      <img src="txtanaly.png" style="height:350px;width:100%;">Image</img>
+      <p>Description:</p>
+      <p>A text analyser application.Allows user to analyse the text typed in the textbox.Features like:convert to uppercase and lowercase,count vowels,count no.of words.</p>
+    </div>
+    <div class="card">
+        <h2>Aniket's Briefcase</h2>
+        <h5>Tech Stack:HTML,CSS,Javascript</h5>
+        <img src="p2.png" style="height:350px;width:100%;">Image</img>
+        <p>Description:</p>
+        <p>My Portfolio project using simple front end tools with access to my cv and all my social media links.</p>
+      </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="me.jpg" style="height:350px;width:100%;">
+      <p><a href="https://www.linkedin.com/in/aniket-raj-249972200/"><button class="button">Connect</button></a></p>
+    </div>
+    <div class="card">
+      <h3>Sample Post</h3>
+      <img src="p11.png" style="height:350px;width:100%;">Image</img><br>
+      <img src="p12.png" style="height:350px;width:100%;">Image</img<br>
+      <img src="p4.png" style="height:350px;width:100%;">Image</img>
+    </div>
+    <div class="card">
+        <h3>Follow Me</h3>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/aniket-raj-249972200/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/aniketraj_18"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/aniketraj18"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <h3>Aniket Raj Portfolio</h3>
+</div>
+
+</body>
+</html>
